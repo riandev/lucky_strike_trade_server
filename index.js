@@ -15,9 +15,9 @@ const port = 5006;
 
 const MongoClient = require("mongodb").MongoClient;
 // const MongoClient = require("mongodb").MongoClient;
-const uri = "mongodb://127.0.0.1:27017/luckyStrick_Trade";
-// const uri =
-//   "mongodb+srv://aktcl:01939773554op5t@cluster0.9akoo.mongodb.net/luckyStrick_Trade?retryWrites=true&w=majority";
+// const uri = "mongodb://127.0.0.1:27017/luckyStrick_Trade";
+const uri =
+  "mongodb+srv://aktcl:01939773554op5t@cluster0.9akoo.mongodb.net/luckyStrick_Trade?retryWrites=true&w=majority";
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
