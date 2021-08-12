@@ -393,13 +393,13 @@ client.connect((err) => {
       console.log(error);
     }
   });
-  app.get("/", (req, res) => {
-    res.send("Connected");
-  });
+  // app.get("/", (req, res) => {
+  //   res.send("Connected");
+  // });
 });
 
-//app.get("/", (req, res) => {
-//  res.send("Hello World!");
-//});
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 
 app.listen(process.env.PORT || port);
